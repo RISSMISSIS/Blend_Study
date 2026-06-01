@@ -1,0 +1,179 @@
+/* Общие стили */
+:root {
+    --bg-color: #1e1e1e;
+    --card-bg: #2d2d2d;
+    --accent-color: #e27625;
+    --text-color: #ffffff;
+    --text-muted: #aaaaaa;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Навигация */
+header {
+    background-color: rgba(30, 30, 30, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Главный экран */
+.hero {
+    padding-top: 140px;
+    text-align: center;
+    background: radial-gradient(circle at center, #3a2211 0%, var(--bg-color) 70%);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Преимущества */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid var(--accent-color);
+}
+
+/* Программа */
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.step span {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-right: 20px;
+}
+
+/* Форма */
+.cta {
+    background-color: #151515;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 16px;
+}
+
+/* Утилиты */
+.hidden {
+    display: none;
+}
+
+#successMessage {
+    margin-top: 20px;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--text-muted);
+    border-top: 1px solid #333;
+}
