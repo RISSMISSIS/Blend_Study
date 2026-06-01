@@ -60,10 +60,26 @@ nav a:hover {
 }
 
 /* Главный экран */
+
+/* Главный экран с фоновым изображением и градиентом */
 .hero {
     padding-top: 140px;
+    padding-bottom: 80px;
     text-align: center;
+    /* Наложение градиентов и картинки: сначала верхний слой (градиент), потом нижний (фото) */
+    background: 
+        linear-gradient(to bottom, rgba(30, 30, 30, 0.9) 0%, rgba(30, 30, 30, 0.4) 30%, rgba(30, 30, 30, 0.4) 70%, #1e1e1e 100%),
+        linear-gradient(to right, #1e1e1e 0%, rgba(30, 30, 30, 0) 20%, rgba(30, 30, 30, 0) 80%, #1e1e1e 100%),
+        url('images/bg-blender.jpg') center center / cover no-repeat;
+}
+
+/*.hero {
+    padding-top: 140px;
+    text-align: center;
+ background: radial-gradient(circle at center, #3a2211 0%, var(--bg-color) 70%);
+    Закрываем градиентный прямоугольник
     background: radial-gradient(circle at center, #3a2211 0%, var(--bg-color) 70%);
+    */
 }
 
 .hero h1 {
