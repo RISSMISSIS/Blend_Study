@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс по Blender 3D: От нуля до Профи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Blender<span>Start</span></div>
+            <nav>
+                <a href="#about">О курсе</a>
+                <a href="#program">Программа</a>
+                <a href="#cta">Записаться</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container hero-container">
+            <h1>Освой 3D-моделирование в Blender</h1>
+            <p>Создай свое первое портфолио с нуля за 8 недель и начни зарабатывать на графике.</p>
+            <a href="#cta" class="btn">Начать обучение</a>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="about" class="features">
+        <div class="container">
+            <h2>Почему наш курс?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Практика</h3>
+                    <p>80% обучения — это создание реальных 3D-моделей.</p>
+                </div>
+                <div class="card">
+                    <h3>Кураторы</h3>
+                    <p>Обратная связь и разбор домашних заданий от экспертов.</p>
+                </div>
+                <div class="card">
+                    <h3>Портфолио</h3>
+                    <p>4 готовых проекта в вашу галерею на ArtStation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программа курса -->
+    <section id="program" class="program">
+        <div class="container">
+            <h2>Программа обучения</h2>
+            <div class="step">
+                <span>01</span>
+                <div>
+                    <h3>Интерфейс и базовый мешинг</h3>
+                    <p>Знакомство с логикой программы, горячими клавишами и простыми формами.</p>
+                </div>
+            </div>
+            <div class="step">
+                <span>02</span>
+                <div>
+                    <h3>Процедурные материалы</h3>
+                    <p>Работа с шейдерами, настройка реалистичного стекла, металла и пластика.</p>
+                </div>
+            </div>
+            <div class="step">
+                <span>03</span>
+                <div>
+                    <h3>Свет и рендеринг</h3>
+                    <p>Выставление студийного освещения и финальный рендер в Cycles и Eevee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма захвата -->
+    <section id="cta" class="cta">
+        <div class="container form-container">
+            <h2>Забронировать место со скидкой 50%</h2>
+            <p>Оставьте заявку, и мы свяжемся с вами в течение 15 минут.</p>
+            <form id="leadForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш Email" required>
+                <button type="submit" class="btn">Получить доступ</button>
+            </form>
+            <div id="successMessage" class="hidden">Спасибо! Мы скоро свяжемся с вами.</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BlenderStart. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
